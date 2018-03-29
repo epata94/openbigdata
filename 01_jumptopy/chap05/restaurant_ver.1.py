@@ -1,3 +1,4 @@
+// Restaurant
 class Restaurant :
 
     def __init__(self, input_name, input_cusine_type) :
