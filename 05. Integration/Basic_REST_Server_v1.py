@@ -2,13 +2,14 @@ from flask import Flask
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
+app.debug = True
 api = Api(app)
 
 class CreateUser(Resource):
     def get(self):
         return {'status': 'success'}
-
 api.add_resource(CreateUser, '/user')
+
 
 class Multi(Resource):
     def get(self,num):
