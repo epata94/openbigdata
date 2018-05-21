@@ -12,6 +12,7 @@ output_workbook = Workbook()
 output_worksheet = output_workbook.add_sheet('jan_2013_output')
 
 pattern = re.compile(r'(?P<my_pattern>^J.*)')
+# pattern = re.compile('^J.*')
 
 customer_name_column_index = 1
 with open_workbook(input_file) as workbook:

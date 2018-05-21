@@ -10,7 +10,7 @@ def update_scheduler():
         if g_AI_Mode == False:
             continue
         else:
-            time.sleep(5)
+            time.sleep(3)
             g_Balcony_Windows = not g_Balcony_Windows
 
 t = threading.Thread(target=update_scheduler)

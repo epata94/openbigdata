@@ -8,7 +8,7 @@ output_file = sys.argv[1]
 
 # Connect to a MySQL database
 con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', \
-user='root', passwd='my_password')
+user='open_source', passwd='my_password')
 c = con.cursor()
 
 # Create a file writer object and write the header row
